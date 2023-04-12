@@ -1,0 +1,27 @@
+name: Workflow for node App
+on: 
+  push:
+    branches: [ main]
+jobs:
+  liniting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v3
+
+      - name: Lint Action
+        uses: wearerequired/lint-action@v2.3.0
+  node-app-build:      
+    strategy:
+      matrix:
+        versions: [16, 17 ,18]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Calling Reusable workflow
+        uses: ./.github/workflows/reuse_flow/nodeJs_proj.yaml
+        with:
+          NODE_VERSION: ${{ matrix.versions }}
+          RUN_TEST: true

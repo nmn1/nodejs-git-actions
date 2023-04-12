@@ -1,4 +1,4 @@
-name:
+name: Reusable Workflow For NodeJs
 on:
   workflow_call:
     inputs:
