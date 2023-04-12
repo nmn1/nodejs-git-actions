@@ -10,11 +10,12 @@ on:
       RUN_TEST:
         description: Pass true to run test.
         required: false
+        type: boolean
         default: fasle  
-  jobs:
-    Install_nodeJS:
-      runs-on: ubuntu-latest
-      steps:
+jobs:
+  Install_nodeJS:
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
