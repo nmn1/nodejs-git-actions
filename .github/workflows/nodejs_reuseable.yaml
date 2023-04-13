@@ -11,7 +11,7 @@ on:
         description: Pass true to run test.
         required: false
         type: boolean
-        default: fasle  
+        default: false  
 jobs:
   Install_nodeJS:
     runs-on: ubuntu-latest
