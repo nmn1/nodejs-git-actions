@@ -15,6 +15,7 @@ jobs:
     strategy:
       matrix:
         versions: [16, 17 ,18]
+    needs: liniting
     uses: nmn1/nodejs-git-actions/.github/workflows/nodejs_reuseable.yaml@main
     with:
         NODE_VERSION: ${{ matrix.versions }}
