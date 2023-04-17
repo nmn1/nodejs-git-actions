@@ -2,6 +2,7 @@ name: Workflow for node App
 on: 
   push:
     branches: [ main]
+  workflow_dispatch:  
 jobs:
   liniting:
     runs-on: ubuntu-latest
