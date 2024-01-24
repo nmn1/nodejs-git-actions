@@ -1,21 +1,21 @@
 
-# name: input
-# on: 
-#   push:
-#     branches:
-#       - main
-#       - "**"
-#   workflow_dispatch:  
-#     inputs:
-#       name:
-#         type: choice
-#         required: true
-#         options:
-#           - a
-#           - b
-# jobs:
-#   print:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Check out the code
-#         run: echo "${{ inputs.name }}"
+name: input
+on: 
+  push:
+    branches:
+      - main
+      - "**"
+  workflow_dispatch:  
+    inputs:
+      name:
+        type: choice
+        required: true
+        options:
+          - a
+          - b
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        run: echo "${{ inputs.name }}"
