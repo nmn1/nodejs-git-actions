@@ -2,7 +2,7 @@
 name: Workflow for node App
 on: 
   push:
-    branches: [ main]
+    branches: "*"
   workflow_dispatch:  
     inputs:
       name:
