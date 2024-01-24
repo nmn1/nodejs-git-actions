@@ -1,6 +1,9 @@
 
-name: Workflow for node App
+name: input feature
 on: 
+  push:
+    branches:
+     - "**"
   workflow_dispatch:  
     inputs:
       name:
