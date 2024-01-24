@@ -1,6 +1,10 @@
 
 name: Workflow for node App
 on: 
+  push:
+    branches:
+      - main
+      - "**"
   workflow_dispatch:  
     inputs:
       name:
