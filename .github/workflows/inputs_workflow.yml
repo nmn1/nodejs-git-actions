@@ -1,5 +1,5 @@
 
-name: Workflow for node App
+name: input
 on: 
   push:
     branches:
