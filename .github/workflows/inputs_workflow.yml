@@ -1,5 +1,5 @@
 
-name: input feature
+name: input feature 2
 on: 
   push:
     branches:
