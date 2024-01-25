@@ -20,7 +20,10 @@ jobs:
     uses: nmn1/nodejs-git-actions/.github/workflows/nodejs_reuseable.yaml@main
     with:
         NODE_VERSION: ${{ matrix.versions }}
-        RUN_TEST: true    
+        RUN_TEST: true 
+        VAR: abc
+        CMD: |
+          echo "$VAR"
     # runs-on: ubuntu-latest
     # steps:
     #   - name: Checkout code
