@@ -1,9 +1,6 @@
 
 name: input feature 2
 on: 
-  push:
-    branches:
-     - "**"
   workflow_dispatch:  
     inputs:
       name:
