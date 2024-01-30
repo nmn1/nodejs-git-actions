@@ -20,4 +20,4 @@ jobs:
     needs: print
     steps:
       - name: check needs
-        runs: echo "hi from execute"
+        run: echo "hi from execute"
