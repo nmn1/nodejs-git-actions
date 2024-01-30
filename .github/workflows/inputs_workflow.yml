@@ -9,6 +9,10 @@ on:
         options:
           - a
           - b
+      print_needed:
+        type: boolean
+        required: false
+        default: false
 jobs:
   print:
     runs-on: ubuntu-latest
