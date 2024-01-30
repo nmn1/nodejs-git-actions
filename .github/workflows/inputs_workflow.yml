@@ -16,6 +16,7 @@ on:
 jobs:
   print:
     runs-on: ubuntu-latest
+    if: ${{ inputs.print_needed }} == true
     steps:
       - name: Check out the code
         run: echo "${{ inputs.name }}"
