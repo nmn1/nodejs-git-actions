@@ -36,6 +36,7 @@ jobs:
       - name: Build 
         run: npm run build --if-present
       - name: Test
+        if: ${{ inputs.RUN_TEST }}
         run: npm run test --if-present
       - name: echo env
         env:
