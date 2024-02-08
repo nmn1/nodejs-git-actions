@@ -27,7 +27,7 @@ jobs:
     uses: nmn1/nodejs-git-actions/.github/workflows/nodejs_reuseable.yaml@main
     with:
         NODE_VERSION: ${{ matrix.versions }}
-        RUN_TEST: ${{  inputs.test-run == yes && true || false }} 
+        RUN_TEST: ${{  inputs.test-run == 'yes' && true || false }} 
         VAR_USE: TEST
         CMD: |
           echo "$VAR"
