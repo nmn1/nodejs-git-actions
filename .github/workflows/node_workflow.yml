@@ -8,8 +8,8 @@ on:
         description: "to perform test"
         type:  choice
         options: 
-          - yes
-          - no
+          - 'yes'
+          - 'no'
 jobs:
   liniting:
     runs-on: ubuntu-latest
