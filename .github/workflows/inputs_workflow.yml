@@ -29,5 +29,5 @@ jobs:
     needs: set-env
     steps:
       - name: print env
-        run: echo $MY_ENV    
+        run: echo "$MY_ENV"    
         
