@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: set env
         run: echo "MY_ENV=eu-central-1" >> "$GITHUB_ENV"
+      - name: print env
+        run: echo "$MY_ENV"    
   print-env: 
     runs-on: ubuntu-latest
     needs: set-env
